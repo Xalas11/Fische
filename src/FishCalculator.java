@@ -20,7 +20,6 @@ public class FishCalculator {
             Fish[] pop = Parser.readFish();
             Parser.printFishList(pop);
             calculator.setPopulation(pop);
-            calculator.calculate(maxPreisInt);
         } catch (NumberFormatException e) {
             System.out.println("Fehler:\nVerwende: java FishCalculator BUDGET\nBUDGET: Die zur Verfuegung stehende Summe als natuerliche Zahl.");
             System.out.print("Eine natuerliche Zahl ist eine Zahl ohne Komma, die groesser ist als 0");
@@ -28,8 +27,7 @@ public class FishCalculator {
         }
     }
 
-    public void calculate(int maxPreis) {
-        this.maxPreis = maxPreis;
+    public void calculate() {
         System.out.println("Budget: " + maxPreis);
     }
     
@@ -57,5 +55,9 @@ public class FishCalculator {
 
     public void setPopulation(Fish[] population) {
         this.population = population;
+    }
+
+    public void setMaxPreis(int maxPreis) {
+        this.maxPreis = maxPreis;
     }
 }
