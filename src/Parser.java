@@ -18,7 +18,7 @@ public class Parser {
 
         while (true) {
             String stringFish = "";
-            System.out.println("Wenn sie keinen Weiteren Fisch mehr eingeben moechten 'end' Eingeben \nBitte gebe den Name des Fisches ein: ");
+            System.out.println("Wenn sie keinen weiteren Fisch mehr eingeben moechten 'end' Eingeben \nBitte gebe den Name des Fisches ein: ");
             String temp = CheckInput.cString();
             if (temp.equals("end")) break;
             stringFish = temp + "$";
