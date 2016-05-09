@@ -25,10 +25,6 @@ public class FishCalculator {
         }
     }
 
-    public FishCalculator() {
-
-    }
-
     public void calculate(int maxPreis) {
         this.maxPreis = maxPreis;
         System.out.println("Budget: " + maxPreis);
