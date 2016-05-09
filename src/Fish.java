@@ -7,7 +7,7 @@ public class Fish {
     String[] incompa;
     String[] compa;
 
-    public void Fisch(String name, int price, String[] incompa) {
+    public Fish(String name, int price, String[] incompa) {
         this.name = name;
         this. price = price;
         this.incompa = incompa;
