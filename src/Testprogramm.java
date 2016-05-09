@@ -7,15 +7,20 @@ public class Testprogramm {
 
     public static void main(String[] args) {
         FishCalculator calculator = new FishCalculator();
-        Fish[] pop = new Fish[0];
+
+        if (args.length != 1) {
+            System.out.println("Fehler:\nVerwende: java Testprogramm PATH\nPATH: Der Pfad zur Textdatei, die die Fische enthaelt.");
+            System.exit(1);
+        }
+
         try {
-            pop = Parser.readFishFromFile("fishes.txt");
+            Fish[] pop = Parser.readFishFromFile(args[0]);
+            Parser.printFishList(pop);
+            calculator.setPopulation(pop);
+            calculator.calculate(170);
         } catch (IOException e) {
            System.out.print("Fish.txt Datei wurde nicht gefunden.");
             System.exit(1);
         }
-        Parser.printFishList(pop);
-        calculator.setPopulation(pop);
-        calculator.calculate(170);
     }
 }
