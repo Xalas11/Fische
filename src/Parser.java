@@ -104,9 +104,35 @@ public class Parser {
             String tempFish ="";
 
             for (String fish : n.getIncompa()) {
-                tempFish += fish + " ";
+                tempFish += fish + ", ";
             }
-            System.out.print(n.getName()+" Price: "+n.getPrice()+" Incompa: "+ tempFish +" \n");
+            if (n.getIncompa().size() == 0) {
+                tempFish += "-";
+            }
+            System.out.print(n.getName()+" ("+n.getPrice()+" Euro)\n   Incompa: "+ tempFish +" \n");
         }
     }
+
+
+    public static void printFishList(HashSet<Fish> fishlist) {
+        int price = 0;
+        for (Fish n: fishlist) {
+            price += n.getPrice();
+            String tempFish ="";
+
+            for (String fish : n.getIncompa()) {
+                tempFish += fish + ", ";
+            }
+            if (n.getIncompa().size() == 0) {
+                tempFish += "-";
+            }
+          // System.out.print(n.getName()+"\n  Preis: "+n.getPrice()+" Euro \n  Incompatibel: "+ tempFish +" \n");
+            System.out.print(n.getName() + " (" + n.getPrice() + " Euro)\n  Incompatibel: "+ tempFish +" \n");
+        }
+        System.out.println("--------------");
+        System.out.println("SUMME "+ price + " Euro");
+    }
+
+
+
 }

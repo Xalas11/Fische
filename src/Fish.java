@@ -9,6 +9,7 @@ public class Fish {
     String name;
     int price;
     HashSet<String> incompa;
+    HashSet<Fish> incompaFish;
 
     public Fish(String name, int price, HashSet<String> incompa) {
         this.name = name;
@@ -22,6 +23,14 @@ public class Fish {
 
     public String getName() {
         return name;
+    }
+
+    public void setIncompaFish(HashSet<Fish> incompaFish) {
+        this.incompaFish = incompaFish;
+    }
+
+    public HashSet<Fish> getIncompaFish() {
+        return incompaFish;
     }
 
     public HashSet<String> getIncompa() {
