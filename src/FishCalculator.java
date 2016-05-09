@@ -18,10 +18,12 @@ public class FishCalculator {
         }
         try {
             int maxPreisInt = Integer.parseInt(args[0]);
-            FishCalculator calculator = new FishCalculator();
             Fish[] pop = Parser.readFish();
             Parser.printFishList(pop);
+            FishCalculator calculator = new FishCalculator();
+            calculator.setMaxPreis(maxPreisInt);
             calculator.setPopulation(pop);
+            calculator.calculate();
         } catch (NumberFormatException e) {
             System.out.println("Fehler:\nVerwende: java FishCalculator BUDGET\nBUDGET: Die zur Verfuegung stehende Summe als natuerliche Zahl.");
             System.out.print("Eine natuerliche Zahl ist eine Zahl ohne Komma, die groesser ist als 0");
