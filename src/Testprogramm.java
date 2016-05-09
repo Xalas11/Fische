@@ -2,7 +2,7 @@
  * Created by bjarne on 09.05.16.
  */
 public class Testprogramm {
-
+/*
     static String[] grueneMigraeneDoesNotLike = {"Breitmaulmolch", "Grottensprotte"};
     static Fish grueneMigraene = new Fish("Gruene Migraene", 70, grueneMigraeneDoesNotLike);
 
@@ -33,4 +33,5 @@ public class Testprogramm {
         calculator.setPopulation(pop);
         calculator.calculate(170);
     }
+    */
 }

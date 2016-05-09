@@ -1,3 +1,6 @@
+import java.util.HashSet;
+import java.util.Arrays;
+
 /**
  * Created by bjarne on 09.05.16.
  */
@@ -29,11 +32,27 @@ public class FishCalculator {
         this.maxPreis = maxPreis;
         System.out.println("Budget: " + maxPreis);
     }
+    
+    public HashSet<Fish> findCompaFishes(Fish fish) {
+        HashSet<Fish> compaFishSet = new HashSet<Fish>();
+        for (int i = 0; i < population.length; i++) {
+            if (population[i].incompa.contains(fish.getName()) == false ) {
+                compaFishSet.add(population[i]);
+            }
+        }
+        return compaFishSet;
+    }
+    
+    public HashSet<Fish> findCompaFishes(HashSet<Fish> fishes) {
+        HashSet<Fish> compaFishSet = new HashSet<>(Arrays.asList(population));
+        for (Fish fish : fishes) {
+            compaFishSet.removeAll(fish.getIncompa());
+        }
+        return  fishes;
+    }
 
-    public Fish[] rekursion(Fish[] remainingFish) {
-        Fish[] remaining = remainingFish;
-        // REKURSION
-        return remaining;
+    public Fish[] rekursion(Fish[] fishes) {
+        return fishes;
     }
 
     public void setPopulation(Fish[] population) {
