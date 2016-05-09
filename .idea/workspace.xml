@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="afd69916-a50d-42da-9dc2-91e480a5f2a1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FishCalculator.java" afterPath="$PROJECT_DIR$/src/FishCalculator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Testprogramm.java" afterPath="$PROJECT_DIR$/src/Testprogramm.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Parser.java" afterPath="$PROJECT_DIR$/src/Parser.java" />
     </list>
     <ignored path="Fish.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,11 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CheckInput.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CheckInput.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/CheckInput.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="7" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
+            <state relative-caret-position="360">
+              <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -44,9 +43,9 @@
               <OriginalElement />
               <nodes>
                 <node x="-163.47857142857146" y="275.0">Testprogramm</node>
-                <node x="292.0" y="193.0">Parser</node>
+                <node x="272.0" y="171.0">Parser</node>
                 <node x="39.0" y="427.0">CheckInput</node>
-                <node x="-199.5" y="27.5">FishCalculator</node>
+                <node x="-209.5" y="16.5">FishCalculator</node>
                 <node x="236.3714285714285" y="11.0">Fish</node>
               </nodes>
               <notes />
@@ -65,7 +64,9 @@
                 </edge>
               </edges>
               <settings layout="Hierarchic Group" zoom="1.0" x="-147.0" y="183.0" />
-              <SelectedNodes />
+              <SelectedNodes>
+                <node>Fish</node>
+              </SelectedNodes>
               <Categories>
                 <Category>Constructors</Category>
                 <Category>Properties</Category>
@@ -77,11 +78,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Testprogramm.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Testprogramm.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Testprogramm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="35" selection-start-line="21" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <state relative-caret-position="240">
+              <caret line="16" column="53" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="53" />
               <folding />
             </state>
           </provider>
@@ -100,13 +101,13 @@
       <file leaf-file-name="Parser.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Parser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="43" column="59" selection-start-line="43" selection-start-column="59" selection-end-line="43" selection-end-column="59" />
+            <state relative-caret-position="226">
+              <caret line="47" column="44" selection-start-line="47" selection-start-column="44" selection-end-line="47" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#249#250#0" expanded="true" />
                 <element signature="e#290#291#0" expanded="true" />
-                <element signature="e#3003#3011#0" expanded="true" />
+                <element signature="e#3007#3015#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -174,10 +175,10 @@
       <list>
         <option value="$PROJECT_DIR$/src/CheckInput.java" />
         <option value="$PROJECT_DIR$/src/Fish.java" />
-        <option value="$PROJECT_DIR$/src/Parser.java" />
         <option value="$PROJECT_DIR$/src/Fish.txt" />
         <option value="$PROJECT_DIR$/src/FishCalculator.java" />
         <option value="$PROJECT_DIR$/src/Testprogramm.java" />
+        <option value="$PROJECT_DIR$/src/Parser.java" />
       </list>
     </option>
   </component>
@@ -284,7 +285,7 @@
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="Testprogramm" />
       <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="$PROJECT_DIR$/src/Fish.txt 170" />
+      <option name="PROGRAM_PARAMETERS" value="170 $PROJECT_DIR$/src/Fish.txt" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -738,12 +739,12 @@
       <updated>1462806182769</updated>
       <workItem from="1462806183953" duration="4763000" />
       <workItem from="1462813707196" duration="835000" />
-      <workItem from="1462814553716" duration="6029000" />
+      <workItem from="1462814553716" duration="6216000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11627000" />
+    <option name="totallyTimeSpent" value="11814000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="6" />
@@ -757,7 +758,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -820,7 +821,7 @@
             <element signature="imports" expanded="true" />
             <element signature="e#249#250#0" expanded="true" />
             <element signature="e#290#291#0" expanded="true" />
-            <element signature="e#3003#3011#0" expanded="true" />
+            <element signature="e#3007#3015#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -887,7 +888,7 @@
             <element signature="imports" expanded="true" />
             <element signature="e#249#250#0" expanded="true" />
             <element signature="e#290#291#0" expanded="true" />
-            <element signature="e#3003#3011#0" expanded="true" />
+            <element signature="e#3007#3015#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -923,50 +924,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/FishUML.uml">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement />
-          <nodes>
-            <node x="-163.47857142857146" y="275.0">Testprogramm</node>
-            <node x="292.0" y="193.0">Parser</node>
-            <node x="39.0" y="427.0">CheckInput</node>
-            <node x="-199.5" y="27.5">FishCalculator</node>
-            <node x="236.3714285714285" y="11.0">Fish</node>
-          </nodes>
-          <notes />
-          <edges>
-            <edge source="Testprogramm" target="FishCalculator">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="FishCalculator" target="Fish">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="Parser" target="Fish">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="1.0" x="-147.0" y="183.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Constructors</Category>
-            <Category>Properties</Category>
-            <Category>Methods</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Fish.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="346">
@@ -977,35 +934,6 @@
             <element signature="e#426#427#0" expanded="true" />
             <element signature="e#469#470#0" expanded="true" />
             <element signature="e#499#500#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Fish.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="59" selection-start-line="6" selection-start-column="59" selection-end-line="6" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CheckInput.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="7" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Parser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="43" column="59" selection-start-line="43" selection-start-column="59" selection-end-line="43" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#249#250#0" expanded="true" />
-            <element signature="e#290#291#0" expanded="true" />
-            <element signature="e#3003#3011#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1027,10 +955,85 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Parser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="47" column="44" selection-start-line="47" selection-start-column="44" selection-end-line="47" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#249#250#0" expanded="true" />
+            <element signature="e#290#291#0" expanded="true" />
+            <element signature="e#3007#3015#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Fish.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="59" selection-start-line="6" selection-start-column="59" selection-end-line="6" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Testprogramm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="35" selection-start-line="21" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        <state relative-caret-position="240">
+          <caret line="16" column="53" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FishUML.uml">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement />
+          <nodes>
+            <node x="-163.47857142857146" y="275.0">Testprogramm</node>
+            <node x="272.0" y="171.0">Parser</node>
+            <node x="39.0" y="427.0">CheckInput</node>
+            <node x="-209.5" y="16.5">FishCalculator</node>
+            <node x="236.3714285714285" y="11.0">Fish</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="Testprogramm" target="FishCalculator">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="FishCalculator" target="Fish">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="Parser" target="Fish">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="-147.0" y="183.0" />
+          <SelectedNodes>
+            <node>Fish</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>Constructors</Category>
+            <Category>Properties</Category>
+            <Category>Methods</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CheckInput.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
           <folding />
         </state>
       </provider>

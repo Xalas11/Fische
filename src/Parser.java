@@ -47,9 +47,9 @@ public class Parser {
 
         String line = bufferText.readLine();
         if (!line.isEmpty()) {
-            line = bufferText.readLine();
             do {
                 fishes.add(createFish(line));
+                line = bufferText.readLine();
             } while (line != null);
         }
         return arrayCreate(fishes);
