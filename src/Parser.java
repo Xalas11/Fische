@@ -51,5 +51,15 @@ public class Parser {
         return fish;
     }
 
+    public static void printFishList(Fish[] fishlist) {
+
+        for (Fish n: fishlist) {
+            String tempFish ="";
+            for (int i=0; i<n.getIncompa().length; i++) {
+                tempFish += n.getIncompa()[i];
+            }
+            System.out.print(n.getName()+" Price: "+n.getPrice()+" Incompa: "+ tempFish +" \n");
+        }
+    }
 
 }
