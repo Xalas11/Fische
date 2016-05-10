@@ -1,0 +1,7 @@
+Gruene Migraene$70$Breitmaulmolch$Grottensprotte$
+Korallenqualle$50$
+Schuppenschatulle$30$Breitmaulmolch$Prachtpiranha$
+Breitmaulmolch$40$Gruene Migraene$Schuppenschatulle$
+Prachtpiranha$40$Schuppenschatulle$Grottensprotte$
+Zitterling$30$Grottensprotte$
+Grottensprotte$20$Gruene Migraene$Prachtpiranha$Zitterling$
