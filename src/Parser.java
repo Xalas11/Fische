@@ -5,39 +5,51 @@ import java.util.HashSet;
 import java.util.LinkedList;
 
 /**
- * Created by bjarne on 09.05.16.
+ * handles input of fishes, from document and from files, can print Fish lists
  */
 public class Parser {
-    public static void main(String[] args) {
-        printFishList(readFish());
-    }
 
+
+    /**
+     * array of Fish
+     * @return
+     */
     public static Fish[] readFish() {
 
         LinkedList<Fish> fishes = new LinkedList();
 
         while (true) {
-            String stringFish = "";
-            System.out.println("Wenn sie keinen weiteren Fisch mehr eingeben moechten 'end' Eingeben \nBitte gebe den Name des Fisches ein: ");
-            String temp = CheckInput.cString();
-            if (temp.equals("end")) break;
-            stringFish = temp + "$";
+            String stringFish;
+            // name of the fish
+            System.out.println("Wenn sie keinen weiteren Fisch mehr eingeben moechten 'end' Eingeben ");
+            System.out.print("\nBitte gebe den Name des Fisches ein: ");
+            stringFish = CheckInput.cString();
+
+            if (stringFish.equals("end")) break; // no more fish
+
+            stringFish += "$";
+            // price of the fish
             System.out.println("Geben sie bitte den Preis des Fisches ein");
             stringFish += Integer.toString(CheckInput.cInt());
+            // incompabilitys of the fish
             while (true) {
                 System.out.println("Fuer Fertig 'end' eingeben geben sie Bitte einen unvertraeglichen Fisch ein: ");
                 stringFish += "$";
-                String temp1 = CheckInput.cString();
-                if (temp1.equals("end")) break;
-                stringFish += temp1;
+                String temp = CheckInput.cString();
+                if (temp.equals("end")) break;
+                stringFish += temp;
             }
             fishes.add(createFish(stringFish));
         }
-
-
         return arrayCreate(fishes);
     }
 
+    /**
+     * array of Fish
+     * @param path
+     * @return
+     * @throws IOException
+     */
     public static Fish[] readFishFromFile(String path) throws IOException {
 
         FileReader getText = new FileReader(path);
@@ -55,6 +67,11 @@ public class Parser {
         return arrayCreate(fishes);
     }
 
+    /**
+     * array of Fish
+     * @param fishes
+     * @return
+     */
     public static Fish[] arrayCreate(LinkedList<Fish> fishes) {
         Fish[] fishList = new Fish[fishes.size()];
         int i = 0;
@@ -66,6 +83,11 @@ public class Parser {
         return fishList;
     }
 
+    /**
+     * Fish
+     * @param stringFish
+     * @return
+     */
     public static Fish createFish(String stringFish) {
         LinkedList<String> inCompaSize = new LinkedList<>();
         String name;
@@ -97,7 +119,10 @@ public class Parser {
         return fish;
     }
 
-
+    /**
+     * array of Fish
+     * @param fishlist
+     */
     public static void printFishList(Fish[] fishlist) {
 
         for (Fish n: fishlist) {
@@ -113,7 +138,10 @@ public class Parser {
         }
     }
 
-
+    /**
+     * hashset of Fish
+     * @param fishlist
+     */
     public static void printFishList(HashSet<Fish> fishlist) {
         int price = 0;
         for (Fish n: fishlist) {

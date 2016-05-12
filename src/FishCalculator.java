@@ -2,7 +2,7 @@ import java.util.HashSet;
 import java.util.Arrays;
 
 /**
- * Created by bjarne on 09.05.16.
+ *
  */
 public class FishCalculator {
 
@@ -10,14 +10,26 @@ public class FishCalculator {
     Fish[] population;
     HashSet<HashSet<Fish>> setSet = new HashSet<HashSet<Fish>>();
 
+    /**
+     * array of Fish
+     * @param population
+     */
     public void setPopulation(Fish[] population) {
         this.population = population;
     }
 
+    /**
+     * int price
+     * @param maxPreis
+     */
     public void setMaxPreis(int maxPreis) {
         this.maxPreis = maxPreis;
     }
 
+    /**
+     * int price
+     * @param args
+     */
     public static void main(String[] args) {
         if (args.length != 1) {
             System.out.println("Fehler:\nVerwende: java FishCalculator BUDGET\nBUDGET: Die zur Verfuegung stehende Summe als natuerliche Zahl.");
@@ -38,10 +50,13 @@ public class FishCalculator {
         }
     }
 
+    /**
+     *
+     */
     public void calculate() {
         System.out.println("Budget: " + maxPreis);
 
-        // Findet incompatible Fischobjekte fuer jeden Fisch
+        // finds incompatible Fishobjekts for every fish
         for(int i = 0; i < population.length; i++) {
             HashSet<Fish> incompFishSet = new HashSet<Fish>();
             for (String incompaName: population[i].getIncompa()) {
@@ -54,11 +69,13 @@ public class FishCalculator {
             population[i].setIncompaFish(incompFishSet);
         }
 
-        // Startet die Rekursion
+        //BJARNE FRAGEN OB WIRKLICH NUR VON STRING ZU HASHSET
+
+        // starts the recursion
         HashSet<Fish> liste = new HashSet<Fish>();
         rekursion(liste);
 
-        // Findet die beste Option aus den Gefundenen
+        // finds the best option out of the combinations
         int best = 0;
         HashSet<Fish> bestSet = new HashSet<Fish>();
         for (HashSet<Fish> set: setSet) {
@@ -67,7 +84,7 @@ public class FishCalculator {
             }
         }
 
-        // Gibt die beste(n) Optionen aus
+        // prints the best option
         for (HashSet<Fish> set: setSet) {
             if (set.size() == best) {
                 System.out.print("\n\nKAUFOPTION:\n");
@@ -76,7 +93,11 @@ public class FishCalculator {
         }
     }
 
-    // Findet Fische, die mit allen gegebenen Fischen compatibel sind
+    /**
+     * finds fishes, which are compatible with a given Fish set
+     * @param fishes
+     * @return
+     */
     public HashSet<Fish> findCompaFishes(HashSet<Fish> fishes) {
         HashSet<Fish> compaFishSet = new HashSet<>(Arrays.asList(population));
         for (Fish fish : fishes) {
@@ -86,6 +107,12 @@ public class FishCalculator {
     }
 
     // Findet Fischkombinationen, die zusammen Leben koennen (und zwar rekursiv)
+
+    /**
+     * finds all possible Fish combinations in terms of diversity
+     * @param fishes
+     * @return
+     */
     public HashSet<Fish> rekursion(HashSet<Fish> fishes) {
         HashSet<Fish> passendeFishe = findCompaFishes(fishes);
         for (Fish passenderFish: passendeFishe) {

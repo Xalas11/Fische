@@ -1,7 +1,7 @@
 import java.io.IOException;
 
 /**
- * Created by bjarne on 09.05.16.
+ * Just to test without scanning all those fishes
  */
 public class Testprogramm {
 
